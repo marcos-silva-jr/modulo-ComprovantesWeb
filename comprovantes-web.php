@@ -36,7 +36,7 @@
 		
 			<link rel="shortcut icon" type="imagex/png" href="fav.png">
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-			<title>Consulta de Comprovantes Web &copy; Atuex Express</title>
+			<title>Consulta de Comprovantes Web</title>
 
 			<!--Carrega as bibliotecas JavaSript para as máscaras de CPF, Celular, etc. -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -112,7 +112,7 @@
 				$usuarios2   = $query2->fetchAll();
 			
 					foreach($usuarios2 as $busca_usuario2) {							
-						$contador_Baixas = $busca_usuario2['CONTT'];							
+						$contador_Baixas = $busca_usuario2['xx'];							
 					} 					
 				 
 				}	catch (Exception $e){	}
@@ -190,14 +190,14 @@
 					foreach($usuarios as $busca_usuario) {						
 					
 							echo "<tr style='background-color: #f5f5f5; height:1.6rem;'>";
-							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['TPO_DOC']."</label></td>"; 
-							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['FILIAL']."</label></td>"; 
-							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['NR_DOC']."</label></td>";
-							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['CHAVE_CTE']."</label></td>"; 
-							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['DT_RECEBIMENTO']."</label></td>"; 
-							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['HORAA']."</label></td>"; 																				
+							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['xx']."</label></td>"; 
+							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['xx']."</label></td>"; 
+							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['xx']."</label></td>";
+							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['xx']."</label></td>"; 
+							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['xx']."</label></td>"; 
+							echo "<td style='width: 1rem;'><label style='font-size:0.7rem; color:black; font-weight:normal; text-align:center;'>".$busca_usuario['xx']."</label></td>"; 																				
 							echo "<td style=''><label style='font-size:0.6rem; background-color: #496282; color:white; font-weight:gold; text-align:center; height: 1.2rem;
-							border-color: black; box-shadow: 0 2px 0 rgba(0, 0, .3, 0),  0 2px 3px rgba(0, 0, 0.2, 0); border-radius:4px;'>".$busca_usuario['OPERADOR']."</label></td>"; 							
+							border-color: black; box-shadow: 0 2px 0 rgba(0, 0, .3, 0),  0 2px 3px rgba(0, 0, 0.2, 0); border-radius:4px;'>".$busca_usuario['xx']."</label></td>"; 							
 							echo "</tr>";					
 						
 					}
@@ -219,8 +219,8 @@
 		<div id="rodape">
 			<label style="background-color: #042f66;    text-align: center;    font-weight:normal;    width:100%;
 			color:white;     position:fixed;     bottom:0px;       font-size: 0.9rem;    height: 1.8rem;">
-				<?php echo date('Y'); ?> &copy; Todos os direitos reservados - Desenvolvido por Atuex Express - 
-				<a href="mailto: suporte@transatual.com.br" style="font-size: 0.9rem; color: white; font-weight:bold; text-decoration:none;">@suporte</a></label>
+				<?php echo date('Y'); ?> Desenvolvido por Marcos Silva 
+			</label>
 		</div>
 			
 	</body>
